@@ -4,8 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BotConfig {
-  private final String token = "7649005728:AAFP_kJilh51V0s6kG96E1qvznKULQUL3mk";
-  private final String username = "log_koioes_bot";
+  private final String token = "BOT_TOKEN";
+  private final String username = "LOG_USERNAME";
 
 
   public String getUsername() {
