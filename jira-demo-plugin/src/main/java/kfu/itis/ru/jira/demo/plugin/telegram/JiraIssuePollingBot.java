@@ -42,8 +42,8 @@ public class JiraIssuePollingBot extends TelegramLongPollingBot {
 
     try {
       List<Issue> rawResponse = issueFetcher.fetchOpenIssues();
-      String parsedResponse = IssueListFormatter.formatIssues(rawResponse);
-      SendMessage message = SendMessage.builder().chatId(chatId).text(parsedResponse).build();
+      String formattedResponse = IssueListFormatter.formatIssues(rawResponse);
+      SendMessage message = SendMessage.builder().chatId(chatId).text(formattedResponse).build();
       execute(message);
     } catch (TelegramApiException e) {
       log.error("Failed to send message: {}", e.getMessage());
