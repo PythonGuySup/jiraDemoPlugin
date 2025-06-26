@@ -6,7 +6,7 @@ Java JDK 8
 
 Jira 7.13.0
 
-code follows Google java style.
+Code follows Google java style.
 
 Run
 ```
